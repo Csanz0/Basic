@@ -4,14 +4,11 @@ let nav = document.querySelector("ul");
 let menus = document.getElementsByClassName("menu");
 
 function cambiarColor() {
-  document.body.removeAttribute("style");
+  document.body.className = "";
 }
 
 function hacerClick() {
-  document.body.setAttribute(
-    "style",
-    "background:linear-gradient(#161616,#16aa)"
-  );
+  document.body.className = "bod";
 }
 
 window.addEventListener(

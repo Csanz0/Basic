@@ -12,7 +12,8 @@
 }
 body {
   width: 98%;
-  margin: 0.5em auto;
+  text-align: center;
+  padding: 0.5em auto;
   background: linear-gradient(
     rgba(0, 255, 221, 0.842),
     rgba(255, 15, 255, 0.87)
@@ -20,7 +21,8 @@ body {
   min-height: 80vh;
   display: block;
   position: relative;
-  transition: 0.5s;
+  transition-property: ease left;
+  transition: 0.8s;
 }
 body::before {
   content: "";
@@ -42,9 +44,40 @@ body::after {
   background: linear-gradient(rgb(192, 167, 238), rgb(155, 141, 238));
   clip-path: circle(10% at 100% 0%);
 }
-.container {
+.bod {
+  width: 98%;
+  padding: 0.5em auto;
+  background: linear-gradient(#2c2b2b, rgb(119, 25, 122));
+  min-height: 80vh;
+  display: block;
+  position: relative;
+  transition-property: ease left;
+  transition: 0.8s;
+}
+
+.bod::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 100%;
-  margin: auto;
+  height: 100%;
+  background: linear-gradient(#71aec0, #6c7460);
+  clip-path: circle(30% at left 90%);
+}
+.bod::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgb(76, 111, 128), rgba(230, 127, 221, 0.685));
+  clip-path: circle(10% at 100% 0%);
+}
+.container {
+  width: 94%;
+  margin: 0.5em auto;
   padding: 0.5em auto;
   display: flex;
   flex-wrap: wrap;
