@@ -218,4 +218,8 @@ body::after {
   html {
     font-size: 5px;
   }
+  .figma-img {
+    width: 80%;
+    height: auto;
+  }
 } ;
