@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search product</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>Search Product.com</h1>
+      <nav class="nav">
+        <ul class="menu">
+          <li class="flex-item">Sobre nostros</li>
+          <li class="flex-item">Ayuda</li>
+          <li class="flex-item">Redes Sociales</li>
+          <li class="div-item">
+            <input type="search" placeholder="Buscar" id="search" />
+            <button type="button" id="btn" class="btn">Buscar</button>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <div class="window">
+      <p class="product-text"></p>
+      <p class="product-codigo"></p>
+      <p class="product-price"></p>
+      <button type="button" id="btn-close" class="btn">Cerrar</button>
+    </div>
+    <main>
+      <section class="slider__section">
+        <section class="slider__body">
+          <div class="slider__div">
+            <h3 class="subtitle">
+              Busca o añade los productos de tu preferencia
+            </h3>
+          </div>
+        </section>
+      </section>
+      <section class="colum-wrap">
+        <table class="row-wrap-table" id="table">
+          <thead>
+            <tr>
+              <th>Codigo</th>
+              <th>Nombre del producto</th>
+              <th>Precio aproximado</th>
+            </tr>
+          </thead>
+          <tbody id="tab">
+            <tr>
+              <td class="codigo">A000</td>
+              <td class="productName">Harina pan</td>
+              <td class="price">1$</td>
+            </tr>
+            <tr>
+              <td class="codigo">A001</td>
+              <td class="productName">Harina de trigo</td>
+              <td class="price">1$</td>
+            </tr>
+            <tr>
+              <td class="codigo">B0000</td>
+              <td class="productName">Mantequilla 1kg</td>
+              <td class="price">3$</td>
+            </tr>
+            <tr>
+              <td class="codigo">A0003</td>
+              <td class="productName">Arroz</td>
+              <td class="price">0.8$</td>
+            </tr>
+            <tr>
+              <td class="codigo">P0000</td>
+              <td class="productName">Pollo</td>
+              <td class="price">5$</td>
+            </tr>
+            <tr>
+              <td class="codigo">P1111</td>
+              <td class="productName">Carne</td>
+              <td class="price">3.5$</td>
+            </tr>
+            <tr>
+              <td class="codigo">TO1212</td>
+              <td class="productName">Salsa de tomate</td>
+              <td class="price">4$</td>
+            </tr>
+            <tr>
+              <td class="codigo">ZDE441</td>
+              <td class="productName">Sal</td>
+              <td class="price">0.3$</td>
+            </tr>
+            <tr>
+              <td class="codigo">C0001</td>
+              <td class="productName">Cereal</td>
+              <td class="price">5$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+      <section class="colum-wrap form">
+        <form action="" class="form row-wrap">
+          <label for="codigo" class="flex-label"
+            >Ingrese el codigo del producto
+          </label>
+          <input type="text" placeholder="Codigo" id="codigo" required />
+
+          <label for="productName" class="flex-label"
+            >Ingrese el nombre del producto</label
+          >
+          <input
+            type="text"
+            placeholder="Nombre del producto"
+            id="productName"
+            required
+          />
+          <label for="price" class="flex-label"
+            >Ingrese el precio del producto</label
+          >
+          <input type="text" placeholder="0$" id="price" required />
+          <button type="button" id="btn-add" class="btn">Agregar</button>
+        </form>
+      </section>
+      <footer class="foo">
+        <p class="item">Derecho reservados Diciembre 2021</p>
+        <p class="item">Realizado por Csanz</p>
+      </footer>
+    </main>
+    <script src="javascript/main.js" type="module"></script>
+  </body>
+</html>
