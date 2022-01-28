@@ -47,57 +47,11 @@
               <th>Precio aproximado</th>
             </tr>
           </thead>
-          <tbody id="tab">
-            <tr>
-              <td class="codigo">A000</td>
-              <td class="productName">Harina pan</td>
-              <td class="price">1$</td>
-            </tr>
-            <tr>
-              <td class="codigo">A001</td>
-              <td class="productName">Harina de trigo</td>
-              <td class="price">1$</td>
-            </tr>
-            <tr>
-              <td class="codigo">B0000</td>
-              <td class="productName">Mantequilla 1kg</td>
-              <td class="price">3$</td>
-            </tr>
-            <tr>
-              <td class="codigo">A0003</td>
-              <td class="productName">Arroz</td>
-              <td class="price">0.8$</td>
-            </tr>
-            <tr>
-              <td class="codigo">P0000</td>
-              <td class="productName">Pollo</td>
-              <td class="price">5$</td>
-            </tr>
-            <tr>
-              <td class="codigo">P1111</td>
-              <td class="productName">Carne</td>
-              <td class="price">3.5$</td>
-            </tr>
-            <tr>
-              <td class="codigo">TO1212</td>
-              <td class="productName">Salsa de tomate</td>
-              <td class="price">4$</td>
-            </tr>
-            <tr>
-              <td class="codigo">ZDE441</td>
-              <td class="productName">Sal</td>
-              <td class="price">0.3$</td>
-            </tr>
-            <tr>
-              <td class="codigo">C0001</td>
-              <td class="productName">Cereal</td>
-              <td class="price">5$</td>
-            </tr>
-          </tbody>
+          <tbody id="tab"></tbody>
         </table>
       </section>
       <section class="colum-wrap form">
-        <form action="" class="form row-wrap">
+        <form action="" class="form row-wrap" id="form-product">
           <label for="codigo" class="flex-label"
             >Ingrese el codigo del producto
           </label>
@@ -116,7 +70,7 @@
             >Ingrese el precio del producto</label
           >
           <input type="text" placeholder="0$" id="price" required />
-          <button type="button" id="btn-add" class="btn">Agregar</button>
+          <input type="submit" value="Añadir" id="btn-add" class="btn" />
         </form>
       </section>
       <footer class="foo">
